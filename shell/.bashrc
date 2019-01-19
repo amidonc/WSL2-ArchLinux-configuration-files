@@ -7,12 +7,11 @@
 #
 # BASH configuration file.  Any modules such as the `dircolors` config
 # are stored in ~/.my_bash.  This setup is part of my dotfiles.  See
-# https://gitlab.com/protesilaos/dotfiles.
+# https://gitlab.com/amidonc/.dotfiles/
 #
 # Note that ALL MY SCRIPTS are designed to work with `#!/bin/bash`.
 # They are not tested for portability.
 #
-# Last reviewed on 2018-11-18
 
 # }}}
 
@@ -24,14 +23,6 @@
 # for keeping this functionality.  See this thread for more information:
 # https://unix.stackexchange.com/questions/12107/how-to-unfreeze-after-accidentally-pressing-ctrl-s-in-a-terminal
 stty ixany
-
-# Include my scripts in the PATH.  To avoid conflicts, I always prepend
-# `own_script_` to my files.  There are some exceptions though, where I
-# am confident that no conflicts will arrise.  See the 'bin' directory
-# of my dotfiles.
-if [ -d "$HOME/bin" ] ; then
-    export PATH=$PATH:"$HOME/bin"
-fi
 
 # Default pager.  Note that the option I pass to it will quit once you
 # try to scroll past the end of the file.
