@@ -74,4 +74,4 @@ sudo vi /etc/apt/sources.list
 sudo apt install firmware-atheros firmware-misc-nonfree 
 
 ## xorg
-  sudo apt install	xorg xdg-utils upower pulseaudio pavucontrol git curl scrot feh rxvt-unicode bspwm rofi sxhkd xbacklight compton dunst libnotify-bin rsync i3lock
+  sudo apt install xorg xdg-utils upower pulseaudio pavucontrol git curl scrot feh rxvt-unicode bspwm rofi sxhkd xbacklight compton dunst libnotify-bin rsync i3lock
