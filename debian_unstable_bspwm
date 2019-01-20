@@ -1,0 +1,77 @@
+## custom linux install on rugged laptop
+## still a WIP - expected this to be updated
+##
+## distro: debian 9
+## wm: bspwm
+## terminal: rxvt
+## shell: bash
+## dotfiles https://github.com/amidonc/.dotfiles
+
+debian 9.6 stable - expert
+	setup users and passwords
+		shadow passwords - yes
+		allow login as root - no
+	partition disks
+		use entire disk and setup LVM encryption
+		seperate home,var,tmp
+	install base system
+		linux-image-amd64
+		targeted
+	package manager
+		non-free: yes
+		contrib: yes
+		enable source: yes
+		security update: yes
+		release updates: yes
+		backported software: no
+	select and install components
+		install SSH server
+		install standard system tools
+	install grub
+  
+## update system
+  sudo apt update
+	
+## install core packages, include apt-listbugs when running testing or unstable
+	apt install vim apt-listbugs build-essential
+
+## if you allow root login during install, install sudo and add user to the sudo group
+  sudo apt install sudo
+  sudo adduser <USERNAME> sudo
+
+## reboot
+  sudo reboot
+
+## update to buster / unstable
+sudo vi /etc/apt/sources.list
+
+	## comment out old sources, update with buster / unstable
+	deb http://ftp.us.debian. org/debian buster main contrib
+	deb-src http://ftp.us.debian.org/debian buster main contrib
+
+	deb http://ftp.us.debian.org/debian-security/ buster/updates main contrib
+	deb-src http://ftp.us.debian.org/debian-security/ buster/updates main contrib
+
+	deb http://ftp.us.debian.org/debian buster-updates main contrib		
+	deb-src http://ftp.us.debian.org/debian buster-updates main contrib
+
+## update package list
+  sudo apt update
+## peform a full system upgrade
+  sudo apt full-upgrade
+    ## configuring libc6
+      restart services without asking <Yes>
+      
+## reboot
+  sudo reboot
+
+## do a bit of cleanup
+  sudo apt autoremove
+  sudo apt clean
+  dpkg --list |grep "^rc" | cut -d " " -f 3 | xargs sudo dpkg --purge
+
+## firmwares for laptop
+sudo apt install firmware-atheros firmware-misc-nonfree 
+
+## xorg
+  sudo apt install xorg xdg-utils upower pulseaudio pavucontrol git curl scrot feh rxvt-unicode bspwm rofi sxhkd xbacklight compton dunst libnotify-bin rsync i3lock
