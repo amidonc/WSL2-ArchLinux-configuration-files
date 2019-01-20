@@ -200,7 +200,7 @@ alias rsyncavzrd='rsync -avzr --delete --progress'
 # Enable automatic color support for common commands that list output
 # and also add handy aliases.  Note the link to the `dircolors`.  This
 # is provided by my dotfiles.
-dircolors_data="$HOME/.my_bash/dircolors"
+dircolors_data="$HOME/.config/dircolors"
 if [ -x /usr/bin/dircolors ]; then
     test -r $dircolors_data && eval "$(dircolors -b ${dircolors_data})" || eval "$(dircolors -b)"
 fi
@@ -412,7 +412,7 @@ cd() {
     if [ -n "$1" ]; then
         builtin cd "$@" && ls -A --color=auto --group-directories-first 
     else
-        builtin cd ~ && ls -A --color=auto --group-directories-first
+        builtin cd ~ && echo "there's no place like..." && ls -A --color=auto --group-directories-first
     fi
 }
 
