@@ -1,6 +1,27 @@
 #! /bin/sh
+#!/bin/bash
+
+# Description {{{
+# ===============
+# Configuration file for the Binary Space Partitioning Window Manager.
+# This is part of my dotfiles, which are managed with GNU Stow.  See
+# https://gitlab.com/protesilaos/dotfiles
+
+# Note that the three `{` and `}` that surround comment blocks are to
+# demarcate Vim folds.  The fold method is defined in the very last line
+# of this document, the "modeline".
+
+# }}}
+
+# Per host configurations {{{
+# ============================
 
 sxhkd &
+
+# display compositor
+if [ -x /usr/bin/compton ]; then
+    compton --config "$HOME/.config/compton.conf" &
+fi
 
 bspc monitor -d I II
 
@@ -16,3 +37,5 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+
+# vim:ft=sh:foldmethod=marker
