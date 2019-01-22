@@ -77,7 +77,7 @@ if [ -x /usr/bin/feh ]; then
     elif [ -f "$HOME/.wallpaper.jpg" ]; then
         feh --bg-fill "$HOME/.wallpaper.jpg" &
     else
-        feh --bg-fill "/usr/share/backgrounds/calvinhobbes1.jpg" &
+        feh --randomize --bg-fill "/usr/share/backgrounds/*" &
     fi
 fi
 
