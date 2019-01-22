@@ -13,9 +13,6 @@
 
 # }}}
 
-# Per host configurations {{{
-# ============================
-
 sxhkd &
 
 # display compositor
