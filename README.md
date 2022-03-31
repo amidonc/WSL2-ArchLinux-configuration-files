@@ -1,6 +1,6 @@
-# WSL ArchLinux configuration files
+# WSL ArchLinux configuration files /n
 
-installed packages: packages.txt
-miscellaneous configurations:  configurations.txt
-dotfiles:  /.dotfiles/
+installed packages: packages.txt /n
+miscellaneous configurations:  configurations.txt /n
+dotfiles:  /.dotfiles/ /n
 
