@@ -3,8 +3,9 @@
     
 ***download powerlevel10k***  
    git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k  
-   <br />
-      ***change the value of ZSH_THEME in ~/.zshrc***
-         ZSH_THEME="powerlevel10k/powerlevel10k"***  
-   ***configure pl10k:***  
-      p10k configure
+     
+   ***change the value of ZSH_THEME in ~/.zshrc***  
+      ZSH_THEME="powerlevel10k/powerlevel10k"***  
+   ***configure pl10k:***  
+      p10k configure  
+      
