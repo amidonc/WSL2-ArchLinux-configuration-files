@@ -1,10 +1,10 @@
-***oh-my-zsh***
-    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+***download & install oh-my-zsh***  
+   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     
-powerlevel10k
-    git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-  
-  change theme in ~/.zshrc file:
-    ZSH_THEME="powerlevel10k/powerlevel10k"
-  configure pl10k:
-    p10k configure
+***download powerlevel10k***  
+   git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k  
+   <br />
+      ***change the value of ZSH_THEME in ~/.zshrc***
+         ZSH_THEME="powerlevel10k/powerlevel10k"***  
+   ***configure pl10k:***  
+      p10k configure
