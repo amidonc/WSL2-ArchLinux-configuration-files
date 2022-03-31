@@ -1,0 +1,18 @@
+man-db
+man-pages
+zsh
+grml-zsh-config
+apparmor
+base-devel
+crda
+exa
+vim
+curl
+git
+
+yay
+  cd /opt
+  sudo git clone https://aur.archlinux.org/yay.git  
+  sudo chown -R <username>:users ./yay
+  cd yay
+  makepkg -si
