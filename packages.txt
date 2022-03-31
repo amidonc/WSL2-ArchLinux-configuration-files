@@ -4,7 +4,6 @@ zsh
 grml-zsh-config
 apparmor
 base-devel
-crda
 exa
 vim
 curl
