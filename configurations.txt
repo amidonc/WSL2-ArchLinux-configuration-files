@@ -28,5 +28,15 @@ download & configure powerlevel10k
          activate the plugins:
             in ~/.zshrc add plugins to plugins=() line.
                plugins=( git zsh-syntax-highlighting zsh-autosuggestions exa-aliases)
-
-      
+               
+bootstrap blackarch
+   $ curl -O https://blackarch.org/strap.sh
+   
+   set execute bit
+      chmod +x strap.sh
+   run strap.sh
+      sudo ./strap.sh
+   enable multilib following https://wiki.archlinux.org/index.php/Official_repositories#Enabling_multilib and run
+      sudo pacman -Syu
+ 
+ 
