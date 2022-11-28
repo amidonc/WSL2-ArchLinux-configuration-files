@@ -1,41 +1,47 @@
-use wsldl and rootfs.tar of latest archlinux
-  follow instructions here:
-      https://wsldl-pg.github.io/docs/How-to-Install/
+# use wsldl and rootfs.tar of latest archlinux
+#   follow instructions here:
+#     https://wsldl-pg.github.io/docs/How-to-Install/
       
-create wsl.conf
-  https://learn.microsoft.com/en-us/windows/wsl/wsl-config
-  vi /etc/wsl.conf
-    [boot]
-    systemd=true
+# create wsl.conf
+# https://learn.microsoft.com/en-us/windows/wsl/wsl-config
+    vi /etc/wsl.conf
+      [boot]
+      systemd=true
     
-update archlinux
-   pacman -Syu
+# update archlinux
+    pacman -Syu
 
-install zsh, zsh-autosuggestions
-   pacman -S zsh zsh-autosuggestions
-
-set default shell of new user to zsh
-   vi /etc/default/useradd
-   SHELL=/bin/zsh
-
-create new user, set password
-  useradd -m -G wheel -s /bin/zsh <username>
-  passwd <username>
-
-give user sudo rights
-  visudo 
-    Under the “User privilege specification” section, add the following line.
-      <username> ALL=(ALL:ALL) ALL
-
-uncomment locale
-   /etc/locale.gen
-   locale-gen
+# uncomment locale
+    /etc/locale.gen
+    locale-gen
    
- exit WSL session
+# install zsh, zsh-autosuggestions
+    pacman -S zsh zsh-autosuggestions
+
+# set default shell of new user to zsh
+    vi /etc/default/useradd
+    SHELL=/bin/zsh
+
+# create new user, set password
+    useradd -m -G wheel -s /bin/zsh <username>
+    passwd <username>
+
+# give user sudo rights
+    visudo 
+      Under the “User privilege specification” section, add the following line
+        <username> ALL=(ALL:ALL) ALL
+        
+# exit WSL session
  
- open powershell session
-  go to archlinux installation directory
-   archlinux config --default-user <username>
+# open powershell session
+# go to archlinux installation directory
+    ./archlinux config --default-user <username>
+
+# shutdown wsl
+    wsl --shutdown
+    
+    
+    
  
 download & install oh-my-zsh
    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
