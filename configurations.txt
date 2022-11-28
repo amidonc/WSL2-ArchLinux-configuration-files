@@ -2,6 +2,12 @@ use wsldl and rootfs.tar of latest archlinux
   follow instructions here:
       https://wsldl-pg.github.io/docs/How-to-Install/
 
+create wsl.conf
+  https://learn.microsoft.com/en-us/windows/wsl/wsl-config
+  vi /etc/wsl.conf
+    [boot]
+    systemd=true
+    
 update archlinux
    pacman -Syu
 
