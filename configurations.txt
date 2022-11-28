@@ -27,7 +27,7 @@
 # create new user, set password
     useradd -m -G wheel -s /bin/zsh <username>
     passwd <username>
-
+    
 # give user sudo rights
     visudo 
       Under the “User privilege specification” section, add the following line
