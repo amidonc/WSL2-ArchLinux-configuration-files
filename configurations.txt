@@ -11,9 +11,12 @@ install zsh, zsh-autosuggestions
 set default shell of new user to zsh
    vi /etc/default/useradd
    SHELL=/bin/zsh
+
+create new user
+  useradd -m -G wheel -s /bin/zsh <username>
    
-change default shell to zsh
-   chsh -s /bin/zsh
+#change default shell to zsh
+#  chsh -s /bin/zsh
    
 uncomment locale
    /etc/locale.gen
