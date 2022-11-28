@@ -39,8 +39,16 @@
 
 # shutdown wsl
     wsl --shutdown
-    
-    
+
+# open archlinux session, should be logged in as <username>
+# lock root user account
+      sudo usermod -L root
+
+# change root login shell to /usr/sbin/nologin
+      sudo usermod -s /usr/sbin/nologin root
+
+
+# Disable Root Login in Linux for SSH
     
  
 download & install oh-my-zsh
