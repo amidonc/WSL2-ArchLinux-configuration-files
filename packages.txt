@@ -3,7 +3,6 @@ man-pages
 zsh
 grml-zsh-config
 base-devel
-exa
 vim
 curl
 git
