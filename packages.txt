@@ -1,9 +1,12 @@
 man-db
 man-pages
+base-devel
 zsh
 grml-zsh-config
-base-devel
+zsh-autosuggestions
+zsh-syntax-highlighting
 vim
+cifs-utils
 curl
 git
 
