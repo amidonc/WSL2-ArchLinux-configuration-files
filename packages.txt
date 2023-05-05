@@ -9,6 +9,7 @@ vim
 cifs-utils
 curl
 git
+openssh
 
 yay
   cd /opt

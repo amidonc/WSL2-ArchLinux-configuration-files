@@ -1,25 +1,10 @@
-# install nerdfont for Windows Terminal
-
-# use wsldl and rootfs.tar of latest archlinux
-#   follow instructions here:
-#     https://wsldl-pg.github.io/docs/How-to-Install/
-      
-# create wsl.conf
-# https://learn.microsoft.com/en-us/windows/wsl/wsl-config
-    vi /etc/wsl.conf
-      [boot]
-      systemd=true
-    
 # update archlinux
-    pacman -Syu
+    yay -Syu
 
 # uncomment locale
     /etc/locale.gen
     locale-gen
    
-# install zsh, zsh-autosuggestions
-    pacman -S zsh zsh-autosuggestions
-
 # set default shell of new user to zsh
     vi /etc/default/useradd
     SHELL=/bin/zsh
@@ -33,16 +18,6 @@
       Under the “User privilege specification” section, add the following line
         %wheel ALL=(ALL:ALL) ALL
         
-# exit WSL session
- 
-# open powershell session
-# go to archlinux installation directory
-    ./archlinux config --default-user <username>
-
-# shutdown wsl
-    wsl --shutdown
-
-# open archlinux session, should be logged in as <username>
 # lock root user account
       sudo usermod -L root
 
