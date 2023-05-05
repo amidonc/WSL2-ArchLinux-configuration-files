@@ -1,4 +1,4 @@
-# WSL ArchLinux configuration files 
+# ArchLinux configuration files 
 
 
 installed packages: packages.txt
