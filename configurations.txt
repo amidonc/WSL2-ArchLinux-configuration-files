@@ -18,7 +18,15 @@
     visudo 
       Under the “User privilege specification” section, add the following line
         %wheel ALL=(ALL:ALL) ALL
-        
+
+# OPENSSL key
+ssh-keygen -t ed25519 -C "email@example.com"
+eval "$(ssh-agent -s)"
+	> Agent pid 59566
+ssh-add ~/.ssh/id_ed25519
+
+# OH-MY-ZSH
+
 download & install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
    
