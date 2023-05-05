@@ -19,12 +19,6 @@
       Under the “User privilege specification” section, add the following line
         %wheel ALL=(ALL:ALL) ALL
         
-# lock root user account
-      sudo usermod -L root
-
-# change root login shell to /usr/sbin/nologin
-      sudo usermod -s /usr/sbin/nologin root
- 
 download & install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
    
