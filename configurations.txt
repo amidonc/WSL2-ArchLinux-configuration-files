@@ -1,5 +1,6 @@
 # update archlinux
     yay -Syu
+	or pacman -Syu if no yay
 
 # uncomment locale
     /etc/locale.gen
@@ -25,16 +26,16 @@
       sudo usermod -s /usr/sbin/nologin root
  
 download & install oh-my-zsh
-   sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
    
 download & configure powerlevel10k
-   git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
    
       change the value of ZSH_THEME in ~/.zshrc
-         ZSH_THEME="powerlevel10k/powerlevel10k"
+      ZSH_THEME="powerlevel10k/powerlevel10k"
          
-      configure pl10k:
-         p10k configure
+configure pl10k:
+p10k configure
          
       clone plugins:
          zsh-syntax-highlighting
