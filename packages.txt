@@ -17,3 +17,8 @@ yay
   sudo chown -R <username>:users ./yay
   cd yay
   makepkg -si
+
+# Hyprland
+hyprland
+kitty
+waybar-hyprland
