@@ -25,6 +25,13 @@ eval "$(ssh-agent -s)"
 	> Agent pid 59566
 ssh-add ~/.ssh/id_ed25519
 
+# LIBSEAT Backend
+export LIBSEAT_BACKEND=logind
+
+# Hyprland
+exec dbus-run-session /usr/bin/Hyprland
+
+
 
 ###########
 # OH-MY-ZSH
