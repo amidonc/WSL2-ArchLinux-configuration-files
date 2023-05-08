@@ -21,4 +21,5 @@ yay
 # Hyprland
 hyprland
 kitty
-waybar-hyprland
+waybar
+
