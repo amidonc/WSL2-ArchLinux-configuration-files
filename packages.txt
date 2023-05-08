@@ -20,6 +20,10 @@ yay
 
 # Hyprland
 hyprland
+xdg-desktop-portal-hyprland
+hyprpaper
+mako
+polkit-gnome
 kitty
 waybar
 
