@@ -25,8 +25,9 @@ eval "$(ssh-agent -s)"
 	> Agent pid 59566
 ssh-add ~/.ssh/id_ed25519
 
-# OH-MY-ZSH
 
+###########
+# OH-MY-ZSH
 download & install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
    
@@ -44,15 +45,14 @@ p10k configure
             git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
          zsh-autosuggestions
             git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-         exa-aliases
-            https://github.com/amidonc/WSL2-ArchLinux-configuration-files/tree/master/dotfiles
-            
-         activate the plugins:
+         
+	activate the plugins:
             in ~/.zshrc add plugins to plugins=() line.
-               plugins=( git zsh-syntax-highlighting zsh-autosuggestions exa-aliases)
-               
-bootstrap blackarch
-   $ curl -O https://blackarch.org/strap.sh
+               plugins=( git zsh-syntax-highlighting zsh-autosuggestions)
+
+#####################
+# bootstrap blackarch
+   curl -O https://blackarch.org/strap.sh
    
    set execute bit
       chmod +x strap.sh
