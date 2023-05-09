@@ -25,6 +25,19 @@ eval "$(ssh-agent -s)"
 	> Agent pid 59566
 ssh-add ~/.ssh/id_ed25519
 
+	# permissions
+	700	~/.shh	
+	644	~/.ssh/authorized_keys
+	644	~/.ssh/known_hosts
+	644	~/.ssh/config
+	600	~/.ssh/id_rsa
+	644	~/.ssh/id_rsa.pub
+          
+# remove grub timeout
+/etc/default/grub          
+GRUB_TIMEOUT=0
+grub-mkconfig -o /boot/grub/grub.cfg
+
 # LIBSEAT Backend
 export LIBSEAT_BACKEND=logind
 
