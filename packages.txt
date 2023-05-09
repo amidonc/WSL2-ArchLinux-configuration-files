@@ -10,6 +10,7 @@ cifs-utils
 curl
 git
 openssh
+ntfs-3g
 
 yay
   cd /opt
