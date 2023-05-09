@@ -26,5 +26,11 @@ hyprpaper
 mako
 polkit-gnome
 kitty
+
+#
 waybar
+
+yay -S clang gobject-introspection libdbusmenu-gtk3 libevdev fmt libgirepository gtk3 gtkmm3 libinput jsoncpp libmpdclient libnl libpulse libsigc++ spdlog wayland scdoc upower
+
+
 
