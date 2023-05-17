@@ -38,6 +38,9 @@ ssh-add ~/.ssh/id_ed25519
 GRUB_TIMEOUT=0
 grub-mkconfig -o /boot/grub/grub.cfg
 
+
+# mkinitcpio -P - use this to show missing firmware
+
 # LIBSEAT Backend
 export LIBSEAT_BACKEND=logind
 
