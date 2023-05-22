@@ -1,3 +1,11 @@
+# yay
+	cd /opt
+	sudo git clone https://aur.archlinux.org/yay.git  
+	sudo chown -R <username>:users ./yay
+	cd yay
+	makepkg -si
+
+
 # update archlinux
     yay -Syu
 	or pacman -Syu if no yay
@@ -41,11 +49,8 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 # mkinitcpio -P - use this to show missing firmware
 
-# LIBSEAT Backend
-export LIBSEAT_BACKEND=logind
 
-# Hyprland
-exec dbus-run-session /usr/bin/Hyprland
+
 
 
 
@@ -72,6 +77,7 @@ p10k configure
 	activate the plugins:
             in ~/.zshrc add plugins to plugins=() line.
                plugins=( git zsh-syntax-highlighting zsh-autosuggestions)
+
 
 #####################
 # bootstrap blackarch
