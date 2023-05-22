@@ -12,25 +12,6 @@ git
 openssh
 ntfs-3g
 
-yay
-  cd /opt
-  sudo git clone https://aur.archlinux.org/yay.git  
-  sudo chown -R <username>:users ./yay
-  cd yay
-  makepkg -si
-
-# Hyprland
-hyprland
-xdg-desktop-portal-hyprland
-hyprpaper
-mako
-polkit-gnome
-kitty
-
-#
-waybar
-
-yay -S clang gobject-introspection libdbusmenu-gtk3 libevdev fmt libgirepository gtk3 gtkmm3 libinput jsoncpp libmpdclient libnl libpulse libsigc++ spdlog wayland scdoc upower
 
 
 
