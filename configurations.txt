@@ -49,9 +49,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 # mkinitcpio -P - use this to show missing firmware
 
-
-
-
+https://wiki.archlinux.org/title/Mkinitcpio#Possibly_missing_firmware_for_module_XXXX
 
 
 ###########
