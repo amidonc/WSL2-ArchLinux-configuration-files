@@ -1,0 +1,2 @@
+
+echo $(( $(xrandr --current | grep '*' | uniq | awk ' {print $1}' | cut -d 'x' -f1) /2-10))
