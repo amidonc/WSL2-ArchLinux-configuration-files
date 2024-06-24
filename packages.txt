@@ -6,12 +6,13 @@ grml-zsh-config
 zsh-autosuggestions
 zsh-syntax-highlighting
 vim
+tree
 cifs-utils
 curl
 git
 openssh
 ntfs-3g
-
+stow
 
 
 
