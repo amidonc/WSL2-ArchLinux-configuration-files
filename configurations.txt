@@ -10,22 +10,8 @@
     yay -Syu
 	or pacman -Syu if no yay
 
-# uncomment locale
-    /etc/locale.gen
-    locale-gen
-   
 # set default shell of new user to zsh
-    vi /etc/default/useradd
-    SHELL=/bin/zsh
-
-# create new user, set password
-    useradd -m -G wheel -s /bin/zsh <username>
-    passwd <username>
-    
-# give user sudo rights
-    visudo 
-      Under the “User privilege specification” section, add the following line
-        %wheel ALL=(ALL:ALL) ALL
+    chsh -s /bin/zsh
 
 # OPENSSL key
 ssh-keygen -t ed25519 -C "email@example.com"
@@ -41,15 +27,6 @@ ssh-add ~/.ssh/id_ed25519
 	600	~/.ssh/id_rsa
 	644	~/.ssh/id_rsa.pub
           
-# remove grub timeout
-/etc/default/grub          
-GRUB_TIMEOUT=0
-grub-mkconfig -o /boot/grub/grub.cfg
-
-
-# mkinitcpio -P - use this to show missing firmware
-
-https://wiki.archlinux.org/title/Mkinitcpio#Possibly_missing_firmware_for_module_XXXX
 
 
 ###########
