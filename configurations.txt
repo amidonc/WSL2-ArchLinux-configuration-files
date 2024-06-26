@@ -27,7 +27,8 @@ ssh-add ~/.ssh/id_ed25519
 	600	~/.ssh/id_rsa
 	644	~/.ssh/id_rsa.pub
           
-
+# link xterm to foot - for rofu running terminal apps
+ln -s /bin/foot /bin/xterm
 
 ###########
 # OH-MY-ZSH
