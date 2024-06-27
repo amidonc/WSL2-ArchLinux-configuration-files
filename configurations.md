@@ -21,8 +21,8 @@ chsh -s /bin/zsh
 ```
 mkinitcpio -p linux
 ```
-** shows 'Possibly missing firmware for module: 
-such as aic94xx-firmware & wd719x-firmware **
+shows 'Possibly missing firmware for module: 
+such as aic94xx-firmware & wd719x-firmware
 
 search yay and install the firmwares
 ```
