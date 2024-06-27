@@ -30,6 +30,13 @@ yay -Ss aic94xx
 yay -Si aic94xx-firmware
 ```
 
+If you're unable to find it doing a seach, run modinfo to see 
+if you can find something using whats in the description or
+depends fields
+```
+modinfo <module>
+```
+
 # OpenSSL key
 ```
 ssh-keygen -t ed25519 -C "email@example.com"
