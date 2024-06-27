@@ -35,7 +35,10 @@ yay -Si aic94xx-firmware
 ssh-keygen -t ed25519 -C "email@example.com"
 eval "$(ssh-agent -s)"
 ```
-  $> Agent pid 59566
+returns your agent pid
+```
+Agent pid xxxxx
+```
 ```
 ssh-add ~/.ssh/id_ed25519
 ```
