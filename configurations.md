@@ -1,23 +1,23 @@
 # Install Yay
 ```
-cd /opt
-sudo git clone https://aur.archlinux.org/yay.git  
-sudo chown -R <username>:users ./yay
-cd yay
-makepkg -si
+  cd /opt
+  sudo git clone https://aur.archlinux.org/yay.git  
+  sudo chown -R <username>:users ./yay
+  cd yay
+  makepkg -si
 ```
 
-# update archlinux
+# Update Archlinux
 ```
 yay -Syu
 ```
 
-# set default shell of new user to zsh
+# Set default shell to zsh
 ```
 chsh -s /bin/zsh
 ```
 
-# check and install missing firmwares
+# Check and install missing firmwares
 ```
 mkinitcpio -p linux
 ```
@@ -30,7 +30,7 @@ yay -Ss aic94xx
 yay -Si aic94xx-firmware
 ```
 
-# OPENSSL key
+# OpenSSL key
 ```
 ssh-keygen -t ed25519 -C "email@example.com"
 eval "$(ssh-agent -s)"
@@ -39,8 +39,7 @@ eval "$(ssh-agent -s)"
 ```
 ssh-add ~/.ssh/id_ed25519
 ```
-
-# permissions
+  Permissions
   700	~/.shh	
   644	~/.ssh/authorized_keys
   644	~/.ssh/known_hosts
@@ -48,17 +47,14 @@ ssh-add ~/.ssh/id_ed25519
   600	~/.ssh/id_rsa
   644	~/.ssh/id_rsa.pub
           
-# link xterm to foot - for rofu running terminal apps
-```
+# Link xterm to foot - for rofu running terminal apps
 ln -s /bin/foot /bin/xterm
-```
 
-
-
-
-
-
-
+#
+#
+#
+#
+#
 
 # OH-MY-ZSH
 download & install oh-my-zsh
@@ -93,5 +89,3 @@ p10k configure
       sudo ./strap.sh
    enable multilib following https://wiki.archlinux.org/index.php/Official_repositories#Enabling_multilib and run
       sudo pacman -Syu
- 
- 
