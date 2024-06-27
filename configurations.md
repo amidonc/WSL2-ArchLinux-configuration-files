@@ -14,36 +14,38 @@
     chsh -s /bin/zsh
 
 # check and install missing firmwares
-...
+```
 mkinitcpio -p linux
-...
+```
 shows 'Possibly missing firmware for module: '
 such as aic94xx-firmware & wd719x-firmware
 
 search yay and install the firmwares
-...
+```
 yay -Ss aic94xx
 yay -Si aic94xx-firmware
-...
+```
 
 # OPENSSL key
+```
 ssh-keygen -t ed25519 -C "email@example.com"
 eval "$(ssh-agent -s)"
-	> Agent pid 59566
+```
+  $> Agent pid 59566
+```
 ssh-add ~/.ssh/id_ed25519
+```
 
-	# permissions
-	700	~/.shh	
-	644	~/.ssh/authorized_keys
-	644	~/.ssh/known_hosts
-	644	~/.ssh/config
-	600	~/.ssh/id_rsa
-	644	~/.ssh/id_rsa.pub
+# permissions
+  700	~/.shh	
+  644	~/.ssh/authorized_keys
+  644	~/.ssh/known_hosts
+  644	~/.ssh/config
+  600	~/.ssh/id_rsa
+  644	~/.ssh/id_rsa.pub
           
 # link xterm to foot - for rofu running terminal apps
 ln -s /bin/foot /bin/xterm
-
-
 
 
 
