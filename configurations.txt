@@ -13,6 +13,19 @@
 # set default shell of new user to zsh
     chsh -s /bin/zsh
 
+# check and install missing firmwares
+...
+mkinitcpio -p linux
+...
+shows 'Possibly missing firmware for module: '
+such as aic94xx-firmware & wd719x-firmware
+
+search yay and install the firmwares
+...
+yay -Ss aic94xx
+yay -Si aic94xx-firmware
+...
+
 # OPENSSL key
 ssh-keygen -t ed25519 -C "email@example.com"
 eval "$(ssh-agent -s)"
@@ -29,6 +42,22 @@ ssh-add ~/.ssh/id_ed25519
           
 # link xterm to foot - for rofu running terminal apps
 ln -s /bin/foot /bin/xterm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ###########
 # OH-MY-ZSH
