@@ -1,10 +1,11 @@
-# yay
-	cd /opt
-	sudo git clone https://aur.archlinux.org/yay.git  
-	sudo chown -R <username>:users ./yay
-	cd yay
-	makepkg -si
-
+# Install Yay
+```
+  cd /opt
+  sudo git clone https://aur.archlinux.org/yay.git  
+  sudo chown -R <username>:users ./yay
+  cd yay
+  makepkg -si
+```
 
 # update archlinux
     yay -Syu
