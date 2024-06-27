@@ -21,8 +21,8 @@ chsh -s /bin/zsh
 ```
 mkinitcpio -p linux
 ```
-shows 'Possibly missing firmware for module: '
-such as aic94xx-firmware & wd719x-firmware
+** shows 'Possibly missing firmware for module: 
+such as aic94xx-firmware & wd719x-firmware **
 
 search yay and install the firmwares
 ```
@@ -35,7 +35,7 @@ yay -Si aic94xx-firmware
 ssh-keygen -t ed25519 -C "email@example.com"
 eval "$(ssh-agent -s)"
 ```
-returns your agent pid
+**returns your agent pid**
 ```
 Agent pid xxxxx
 ```
