@@ -42,18 +42,17 @@ Agent pid xxxxx
 ```
 ssh-add ~/.ssh/id_ed25519
 ```
-  Permissions
-  700	~/.shh	
-  644	~/.ssh/authorized_keys
-  644	~/.ssh/known_hosts
-  644	~/.ssh/config
-  600	~/.ssh/id_rsa
-  644	~/.ssh/id_rsa.pub
-          
+Permissions
+```
+chmod <username>:<group> 700 ~/.shh	
+chmod <username>:<group> 644	~/.ssh/authorized_keys ~/.ssh/known_hosts ~/.ssh/config ~/.ssh/id_rsa.pub
+chmod <username>:<group> 600	~/.ssh/id_rsa
+```          
 # Link xterm to foot - for rofu running terminal apps
+```
 ln -s /bin/foot /bin/xterm
+```
 
-#
 #
 #
 #
