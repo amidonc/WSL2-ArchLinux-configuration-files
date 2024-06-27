@@ -53,13 +53,6 @@ ln -s /bin/foot /bin/xterm
 
 
 
-
-
-
-
-
-
-###########
 # OH-MY-ZSH
 download & install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -84,7 +77,6 @@ p10k configure
                plugins=( git zsh-syntax-highlighting zsh-autosuggestions)
 
 
-#####################
 # bootstrap blackarch
    curl -O https://blackarch.org/strap.sh
    
