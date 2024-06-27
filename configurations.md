@@ -1,18 +1,21 @@
 # Install Yay
 ```
-  cd /opt
-  sudo git clone https://aur.archlinux.org/yay.git  
-  sudo chown -R <username>:users ./yay
-  cd yay
-  makepkg -si
+cd /opt
+sudo git clone https://aur.archlinux.org/yay.git  
+sudo chown -R <username>:users ./yay
+cd yay
+makepkg -si
 ```
 
 # update archlinux
-    yay -Syu
-	or pacman -Syu if no yay
+```
+yay -Syu
+```
 
 # set default shell of new user to zsh
-    chsh -s /bin/zsh
+```
+chsh -s /bin/zsh
+```
 
 # check and install missing firmwares
 ```
@@ -46,8 +49,9 @@ ssh-add ~/.ssh/id_ed25519
   644	~/.ssh/id_rsa.pub
           
 # link xterm to foot - for rofu running terminal apps
+```
 ln -s /bin/foot /bin/xterm
-
+```
 
 
 
