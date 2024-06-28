@@ -2,6 +2,18 @@
 
 [logo]: https://archlinux.org/static/logos/archlinux-logo-dark-1200dpi.b42bd35d5916.png "Arch BTW"
 
+# Install from ISO
+
+boot from archlinux ISO
+
+mount usb stick
+```
+mkdir /mnt/usb/
+mount /dev/sdxx /mnt/usb
+```
+Move custom profile ptyhon scripts to 
+
+<br />
 
 # System Configuration
 
@@ -67,10 +79,10 @@ chmod <username>:<group> 600	~/.ssh/id_rsa
 ln -s /bin/foot /bin/xterm
 ```
 
-####
-####
-####
-####
+<br />
+<br />
+<br />
+<br />
 
 # OH-MY-ZSH
 download & install oh-my-zsh
