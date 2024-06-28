@@ -14,3 +14,5 @@ openssh
 ntfs-3g
 stow
 btop
+snapper
+snap-pac
