@@ -1,4 +1,4 @@
-# Install Yay
+#### Install Yay
 ```
 cd /opt
 sudo git clone https://aur.archlinux.org/yay.git  
@@ -7,17 +7,17 @@ cd yay
 makepkg -si
 ```
 
-# Update Archlinux
+#### Update Archlinux
 ```
 yay -Syu
 ```
 
-# Set default shell to zsh
+#### Set default shell to zsh
 ```
 chsh -s /bin/zsh
 ```
 
-# Check and install missing firmwares
+#### Check and install missing firmwares
 ```
 mkinitcpio -p linux
 ```
@@ -37,7 +37,7 @@ depends fields
 modinfo <module>
 ```
 
-# OpenSSL key
+#### OpenSSL key
 ```
 ssh-keygen -t ed25519 -C "email@example.com"
 eval "$(ssh-agent -s)"
@@ -55,15 +55,15 @@ chmod <username>:<group> 700 ~/.shh
 chmod <username>:<group> 644	~/.ssh/authorized_keys ~/.ssh/known_hosts ~/.ssh/config ~/.ssh/id_rsa.pub
 chmod <username>:<group> 600	~/.ssh/id_rsa
 ```          
-# Link xterm to foot - for rofu running terminal apps
+#### Link xterm to foot - for rofu running terminal apps
 ```
 ln -s /bin/foot /bin/xterm
 ```
 
-#
-#
-#
-#
+####
+####
+####
+####
 
 # OH-MY-ZSH
 download & install oh-my-zsh
