@@ -26,13 +26,28 @@ class DesktopProfile(Profile):
 			'nano',
 			'vim',
 			'openssh',
-			'htop',
+			'btop',
 			'wget',
 			'iwd',
 			'wireless_tools',
 			'wpa_supplicant',
 			'smartmontools',
-			'xdg-utils'
+			'xdg-utils',
+			'man-db',
+			'man-pages',
+			'base-devel',
+			'zsh',
+			'grml-zsh-config',
+			'zsh-autosuggestions',
+			'zsh-syntax-highlighting',
+			'tree',
+			'cifs-utils',
+			'curl',
+			'git',
+			'ntfs-3g',
+			'stow',
+			'snapper'
+			'snap-pac'
 		]
 
 	@property
