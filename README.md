@@ -5,7 +5,7 @@
 
 # System Configuration
 
-#### Install Yay
+#### Yay Package Manager
 ```
 cd /opt
 sudo git clone https://aur.archlinux.org/yay.git  
