@@ -117,8 +117,8 @@ ssh-add ~/.ssh/id_ed25519
 Permissions
 ```
 chmod <username>:<group> 700 ~/.shh	
-chmod <username>:<group> 644	~/.ssh/authorized_keys ~/.ssh/known_hosts ~/.ssh/config ~/.ssh/id_rsa.pub
-chmod <username>:<group> 600	~/.ssh/id_rsa
+chmod <username>:<group> 644 ~/.ssh/authorized_keys ~/.ssh/known_hosts ~/.ssh/config ~/.ssh/id_rsa.pub
+chmod <username>:<group> 600 ~/.ssh/id_rsa
 ```          
 #### Link xterm to foot - for rofi running terminal apps
 ```
