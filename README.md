@@ -57,6 +57,7 @@ disk configuration
     yes, use default subvolume structure
     use compression
 disk encryption
+```
  
 <br/>
 
