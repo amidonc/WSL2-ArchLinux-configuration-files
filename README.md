@@ -36,7 +36,11 @@ mount /dev/sdxx /mnt/usb
 
 copy custom archinstall scripts from /mnt/usb/arch-usb/archinstall to /usr/lib/python3.12/site-packages
 ```
-copy -R /mnt/usb/arch-usb/archinstall /usr/lib/python3.12/site-packages
+cp -R /mnt/usb/arch-usb/archinstall /usr/lib/python3.12/site-packages
+```
+run archinstall with user_configuration.json file
+```
+archinstall --config /mnt/usb/arch-usb/user-configuration.json
 ```
 
 <br/>
