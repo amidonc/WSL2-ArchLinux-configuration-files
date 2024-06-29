@@ -8,6 +8,9 @@ acquire an installation image and prepare USB installation media
 
 Copy files from [arch-usb](arch-usb/) folder to USB installation media
 
+Boot the live environment
+
+
 # Install from USB 
 
 boot from archlinux install media
