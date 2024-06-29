@@ -32,8 +32,10 @@ mount usb stick
 mkdir /mnt/usb/
 mount /dev/sdxx /mnt/usb
 ```
-Move custom profile ptyhon scripts to 
 
+copy custom archinstall scripts from /mnt/usb/arch-usb/archinstall to /usr/lib/python3.12/site-packages
+```
+copy -R /mnt/usb/k/usr/lib/pythom
 <br />
 
 # System Configuration
