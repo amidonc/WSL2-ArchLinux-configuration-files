@@ -2,6 +2,8 @@
 
 [logo]: https://archlinux.org/static/logos/archlinux-logo-dark-1200dpi.b42bd35d5916.png "Arch BTW"
 
+# Preperation
+
 acquire an installation image and prepare USB installation media
 
 Copy files from [arch-usb](arch-usb/) folder to USB installation media
