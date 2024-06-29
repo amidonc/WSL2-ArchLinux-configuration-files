@@ -36,8 +36,10 @@ mount /dev/sdxx /mnt/usb
 
 copy custom archinstall scripts from /mnt/usb/arch-usb/archinstall to /usr/lib/python3.12/site-packages
 ```
-copy -R /mnt/usb/k/usr/lib/pythom
-<br />
+copy -R /mnt/usb/arch-usb/archinstall /usr/lib/python3.12/site-packages
+```
+
+<br/>
 
 # System Configuration
 
