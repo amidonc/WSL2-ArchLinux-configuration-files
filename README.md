@@ -42,7 +42,22 @@ run archinstall with user_configuration.json file
 ```
 archinstall --config /mnt/usb/arch-usb/user-configuration.json
 ```
-
+configure disk
+```
+disk configuration
+  artitioning
+    use a best-effort default partition layout
+      select disk
+      select filesystem
+      yes, use default subvolume structure
+      use compression
+  LVM
+    default layout
+    btrfs filesystem
+    yes, use default subvolume structure
+    use compression
+disk encryption
+ 
 <br/>
 
 # System Configuration
