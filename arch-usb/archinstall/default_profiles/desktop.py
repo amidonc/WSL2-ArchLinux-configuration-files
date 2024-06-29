@@ -46,7 +46,7 @@ class DesktopProfile(Profile):
 			'git',
 			'ntfs-3g',
 			'stow',
-			'snapper'
+			'snapper',
 			'snap-pac'
 		]
 
