@@ -10,7 +10,22 @@ Copy files from [arch-usb](arch-usb/) folder to USB installation media
 
 # Install from USB 
 
-boot from archlinux ISO
+boot from archlinux install media
+
+connect to wireless network
+```
+iwctl device list
+iwctl station <device> scan
+iwctl station <device> get-networks
+iwctl station <device> connect <network SSID>
+```
+enter passphrase when prompted
+
+update archinstall
+```
+pacman -Sy
+pacman -S archinstall
+```
 
 mount usb stick
 ```
