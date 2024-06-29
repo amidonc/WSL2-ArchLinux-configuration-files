@@ -120,7 +120,7 @@ chmod <username>:<group> 700 ~/.shh
 chmod <username>:<group> 644	~/.ssh/authorized_keys ~/.ssh/known_hosts ~/.ssh/config ~/.ssh/id_rsa.pub
 chmod <username>:<group> 600	~/.ssh/id_rsa
 ```          
-#### Link xterm to foot - for rofu running terminal apps
+#### Link xterm to foot - for rofi running terminal apps
 ```
 ln -s /bin/foot /bin/xterm
 ```
