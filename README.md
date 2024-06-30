@@ -56,9 +56,26 @@ disk configuration
     btrfs filesystem
     yes, use default subvolume structure
     use compression
+```
 disk encryption
 ```
- 
+disk encryption
+  encryption type
+    LVM on LUKS
+  encryption password
+  partitions
+    select partition to encrypt
+```
+hostname
+```
+hostname
+  enter a hostname
+```
+root password and create user(s)
+```
+
+```
+
 <br/>
 
 # System Configuration
