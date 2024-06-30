@@ -71,10 +71,17 @@ hostname
 hostname
   enter a hostname
 ```
-root password and create user(s)
+root password and create user
 ```
-
-```
+root password
+  enter root password or leave blank to disable root login
+user account
+  add a user
+    enter a username
+    enter a password
+    yes, give user sudo rights
+confitm and exit
+```  
 
 <br/>
 
