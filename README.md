@@ -87,6 +87,26 @@ confitm and exit
 
 # System Configuration
 
+#### OpenSSL key
+generate rsa key if needed
+```
+ssh-keygen -t ed25519 -C "email@example.com"
+eval "$(ssh-agent -s)"
+```
+**returns your agent pid**
+```
+Agent pid xxxxx
+```
+```
+ssh-add ~/.ssh/id_ed25519
+```
+Permissions
+```
+chmod 700 ~/.shh	
+chmod 644 ~/.ssh/authorized_keys ~/.ssh/known_hosts ~/.ssh/config ~/.ssh/id_rsa.pub
+chmod 600 ~/.ssh/id_rsa
+```
+ 
 #### Yay Package Manager
 ```
 cd /opt
@@ -126,24 +146,6 @@ depends fields
 modinfo <module>
 ```
 
-#### OpenSSL key
-```
-ssh-keygen -t ed25519 -C "email@example.com"
-eval "$(ssh-agent -s)"
-```
-**returns your agent pid**
-```
-Agent pid xxxxx
-```
-```
-ssh-add ~/.ssh/id_ed25519
-```
-Permissions
-```
-chmod <username>:<group> 700 ~/.shh	
-chmod <username>:<group> 644 ~/.ssh/authorized_keys ~/.ssh/known_hosts ~/.ssh/config ~/.ssh/id_rsa.pub
-chmod <username>:<group> 600 ~/.ssh/id_rsa
-```          
 #### Link xterm to foot - for rofi running terminal apps
 ```
 ln -s /bin/foot /bin/xterm
