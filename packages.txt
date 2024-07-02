@@ -17,6 +17,7 @@ stow
 btop
 snapper
 snap-pac
-<br />
+
+
 foot
 rofi-wayland
