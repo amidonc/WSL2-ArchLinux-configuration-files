@@ -1,3 +1,4 @@
+packages added
 man-db
 man-pages
 base-devel
@@ -16,3 +17,6 @@ stow
 btop
 snapper
 snap-pac
+<br />
+foot
+rofi-wayland
