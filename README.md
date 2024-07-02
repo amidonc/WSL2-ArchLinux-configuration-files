@@ -106,6 +106,19 @@ chmod 700 ~/.shh
 chmod 644 ~/.ssh/authorized_keys ~/.ssh/known_hosts ~/.ssh/config ~/.ssh/id_rsa.pub
 chmod 600 ~/.ssh/id_rsa
 ```
+
+#### clone dotfiles
+
+Check out the dotfiles repo in your $HOME directory using git
+```
+cd ~/
+git clone git@github.com/amidonc/dotfiles.git
+cd dotfiles
+```
+use GNU stow to create symlinks
+```
+stow .
+```
  
 #### Yay Package Manager
 ```
