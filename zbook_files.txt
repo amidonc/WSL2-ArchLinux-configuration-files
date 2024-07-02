@@ -1,3 +1,4 @@
 aic94xx-firmware
 upd72929x-fw
 wd719x-firmware
+linux-firmware-qlogic
