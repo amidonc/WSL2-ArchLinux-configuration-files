@@ -158,6 +158,24 @@ depends fields
 ```
 modinfo <module>
 ```
+#### Configure /etc/vconsole.conf
+run systemd-vconsole-setup  to create /etc/vconsole.conf
+```
+sudo /usr/lib/ayatemd/./systemd-vconsole-setup
+```
+view consle fonts
+```
+ls -l /usr/share/xbd/consolefonts/
+```
+edit /etc/vconsole.conf, add font
+```
+sudo vim /etc/vconsole.conf
+
+FONT=viscii10
+```
+
+
+FONT=
 
 #### Link xterm to foot - for rofi running terminal apps
 ```
