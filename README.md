@@ -98,6 +98,14 @@ create a symbolic link to foot from xterm
 ```
 ln -s /bin/foot /bin/kitty
 ```
+exit chroot
+```
+exit
+```
+reboot
+```
+reboot
+```
 
 <br/>
 
