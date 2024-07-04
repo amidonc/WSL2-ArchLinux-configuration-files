@@ -1,4 +1,4 @@
-![alt text][logo]
+9692![alt text][logo]
 
 [logo]: https://archlinux.org/static/logos/archlinux-logo-dark-1200dpi.b42bd35d5916.png "Arch BTW"
 
@@ -98,13 +98,10 @@ create a symbolic link to foot from xterm
 ```
 ln -s /bin/foot /bin/kitty
 ```
-exit chroot
+exit chroot, rebbot system
 ```
 exit
-```
-reboot
-```
-reboot
+rebbot
 ```
 
 <br/>
