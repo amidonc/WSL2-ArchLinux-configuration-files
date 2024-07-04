@@ -85,11 +85,11 @@ confitm and exit
 
 after install, choose 'yes' to enter chroot
 
-create a symbolic link for kitty that points to foot for hyprland. 
+create a symbolic link to foot from kitty for hyprland
 ```
 ln -s /bin/foot /bin/kitty
 ```
-create a symbolic link for xterm
+create a symbolic link to foot from xterm
 ```
 ln -s /bin/foot /bin/kitty
 ```
