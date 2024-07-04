@@ -108,6 +108,14 @@ reboot
 
 # System Configuration
 
+#### configure snapper
+create snapper configuration file
+```
+snapper -c root create-config /
+```
+
+
+
 #### OpenSSL key
 generate rsa key if needed
 ```
