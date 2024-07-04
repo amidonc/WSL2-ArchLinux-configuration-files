@@ -111,10 +111,19 @@ reboot
 #### configure snapper
 create snapper configuration file
 ```
-snapper -c root create-config /
+sudo snapper -c root create-config /
 ```
-
-
+creating config failed (creating a btrfs subvolume .snapshots failed since it already exists)
+unmount and delete .snapshots
+```
+sudo umount /.snapshots/
+sudo rm -r /.snapshots/
+```
+now create snapper configuration file and remount
+```
+sudo snapper -c root create-config /
+sudo mount -a
+```
 
 #### OpenSSL key
 generate rsa key if needed
