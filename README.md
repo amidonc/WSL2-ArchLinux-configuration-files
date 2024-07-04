@@ -45,7 +45,7 @@ archinstall --config /mnt/usb/arch-usb/user-configuration.json
 configure disk
 ```
 disk configuration
-  artitioning
+  partitioning
     use a best-effort default partition layout
       select disk
       select filesystem
