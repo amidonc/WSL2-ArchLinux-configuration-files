@@ -82,6 +82,11 @@ user account
     yes, give user sudo rights
 confitm and exit
 ```
+install
+```
+install
+  press <Enter> to continue
+```
 
 after install, choose 'yes' to enter chroot
 
