@@ -81,7 +81,18 @@ user account
     enter a password
     yes, give user sudo rights
 confitm and exit
-```  
+```
+
+after install, choose 'yes' to enter chroot
+
+create a symbolic link for kitty that points to foot for hyprland. 
+```
+ln -s /bin/foot /bin/kitty
+```
+create a symbolic link for xterm
+```
+ln -s /bin/foot /bin/kitty
+```
 
 <br/>
 
