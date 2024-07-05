@@ -26,7 +26,7 @@ class HyprlandProfile(XorgProfile):
 		return [
 			"hyprland",
 			"dunst",
-			"foot",
+			"kitty",
 			"dolphin",
 			"rofi-wayland",
 			"xdg-desktop-portal-hyprland",
@@ -34,7 +34,9 @@ class HyprlandProfile(XorgProfile):
 			"qt6-wayland",
 			"polkit-kde-agent",
 			"grim",
-			"slurp"
+			"slurp",
+			"neofetch",
+			"hyprlock"
 		]
 
 	@property
