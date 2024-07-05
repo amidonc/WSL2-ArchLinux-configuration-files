@@ -127,8 +127,10 @@ setting the default to @
 ```
 sudo btrfs subvol get-default /
 sudo btrfs subvol list /
-
-sudo btrfs subvol set-default 256 /
+```
+use id from path @
+```
+sudo btrfs subvolume set-default 256 /
 sudo btrfs subvol get-default /
 ```
 list snapshots
@@ -138,7 +140,7 @@ sudo snapper ls
 create baseline snapeshot
 
 ```
-sudo snapper -c root 
+sudo snapper -c root create --description "base install" 
 ```
 
 #### OpenSSL key
