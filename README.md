@@ -123,8 +123,17 @@ sudo snapper -c home create-config /home
 sudo mount -a
 ```
 setting the default to @
+```
+sudo btrfs subvol get-default /
+sudo btrfs subvol list /
 
-
+sudo btrfs subvol set-default 256 /
+sudo btrfs subvol get-default /
+```
+list snapshots
+```
+sudo snapper ls
+```
 create baseline snapeshot
 
 ```
