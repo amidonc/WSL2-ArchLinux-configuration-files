@@ -122,6 +122,9 @@ sudo snapper -c home create-config /home
 
 sudo mount -a
 ```
+setting the default to @
+
+
 create baseline snapeshot
 
 ```
