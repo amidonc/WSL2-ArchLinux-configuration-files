@@ -124,6 +124,10 @@ now create snapper configuration file and remount
 sudo snapper -c root create-config /
 sudo mount -a
 ```
+create baseline snapeshot
+
+```
+sudo snapper -c root 
 
 #### OpenSSL key
 generate rsa key if needed
