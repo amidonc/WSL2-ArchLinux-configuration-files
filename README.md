@@ -105,20 +105,21 @@ reboot
 # System Configuration
 
 #### configure snapper
-create snapper configuration file
-```
-sudo snapper -c root create-config /
-```
-creating config failed (creating a btrfs subvolume .snapshots failed since it already exists)
 unmount and delete .snapshots
 ```
-sudo umount /.snapshots/
+sudo umount /.snapshots
 sudo rm -r /.snapshots/
 ```
-now create snapper configuration file and remount
+create snapper configuration files
 ```
 sudo snapper -c root create-config /
 sudo snapper -c home create-config /home
+```
+list subvolumes with btrfs and remove old .snapshots volume
+```
+sudo btrfs subvolume list /
+sudo btrfs subvolume delete /.snapshots
+```
 
 sudo mount -a
 ```
