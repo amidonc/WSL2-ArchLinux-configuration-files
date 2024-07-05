@@ -90,10 +90,6 @@ install
 
 after install, choose 'yes' to enter chroot
 
-create a symbolic link to foot from kitty for hyprland
-```
-ln -s /bin/foot /bin/kitty
-```
 create a symbolic link to foot from xterm
 ```
 ln -s /bin/foot /bin/kitty
