@@ -168,7 +168,7 @@ chmod 600 ~/.ssh/id_rsa
 Check out the dotfiles repo in your $HOME directory using git
 ```
 cd ~/
-git clone git@github.com/amidonc/dotfiles.git
+git clone git@github.com:amidonc/dotfiles.git
 cd dotfiles
 ```
 use GNU stow to create symlinks
