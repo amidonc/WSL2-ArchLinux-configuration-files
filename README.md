@@ -119,8 +119,8 @@ list subvolumes with btrfs and remove old .snapshots volume
 ```
 sudo btrfs subvolume list /
 sudo btrfs subvolume delete /.snapshots
-```
 
+sudo mkdir /.snapshots
 sudo mount -a
 ```
 setting the default to @
