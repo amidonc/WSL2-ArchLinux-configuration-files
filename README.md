@@ -90,7 +90,7 @@ install
 
 after install, choose 'yes' to enter chroot
 
-create a symbolic link to foot from xterm
+create a symbolic link to kitty from xterm
 ```
 ln -s /bin/kitty /bin/xterm
 ```
