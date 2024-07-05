@@ -36,7 +36,8 @@ class HyprlandProfile(XorgProfile):
 			"grim",
 			"slurp",
 			"neofetch",
-			"hyprlock"
+			"hyprlock",
+			"duf"
 		]
 
 	@property
