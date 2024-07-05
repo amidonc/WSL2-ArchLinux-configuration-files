@@ -92,7 +92,7 @@ after install, choose 'yes' to enter chroot
 
 create a symbolic link to foot from xterm
 ```
-ln -s /bin/foot /bin/kitty
+ln -s /bin/foot /bin/xterm
 ```
 exit chroot, reboot system
 ```
