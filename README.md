@@ -1,4 +1,4 @@
-![alt text][logo]
+8![alt text][logo]
 
 [logo]: https://archlinux.org/static/logos/archlinux-logo-dark-1200dpi.b42bd35d5916.png "Arch BTW"
 
@@ -90,8 +90,10 @@ install
 
 after install, choose 'yes' to enter chroot
 
+change the umask for the efi or boot partition in your /etc/fstab to something like this "fmask=0077,dmask=0077
+
 create a symbolic link to kitty from xterm
-```
+``
 ln -s /bin/kitty /bin/xterm
 ```
 exit chroot, reboot system
