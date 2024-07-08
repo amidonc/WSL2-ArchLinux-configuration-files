@@ -90,7 +90,12 @@ install
 
 after install, choose 'yes' to enter chroot
 
-change the umask for the efi or boot partition in your /etc/fstab to something like this "fmask=0077,dmask=0077
+change the umask for the efi or boot partition in your fstab to "fmask=0077,dmask=0077"
+```
+vim /etc/fstab
+# /dev/sda1
+UUID=<uid>  /boot  vfat  FW,relatime,fsmask=0077.dmask077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro  0 2
+```
 
 create a symbolic link to kitty from xterm
 ```
