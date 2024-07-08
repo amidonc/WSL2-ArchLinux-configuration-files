@@ -37,7 +37,12 @@ class HyprlandProfile(XorgProfile):
 			"slurp",
 			"neofetch",
 			"hyprlock",
-			"duf"
+			"duf",
+			"ttf-firacode-nerd",
+			"imagemagick",
+			"libnotify",
+			"python-dbus",
+			"playerctrl"
 		]
 
 	@property
