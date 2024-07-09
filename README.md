@@ -197,6 +197,11 @@ makepkg -si
 yay -Syu
 ```
 
+pleanup packages
+```
+pacman -Rns $(pacman -Qdtq)
+```
+
 #### Set default shell to zsh
 ```
 chsh -s /bin/zsh
