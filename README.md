@@ -239,7 +239,7 @@ edit /etc/vconsole.conf, add font
 ```
 sudo vim /etc/vconsole.conf
 
-FONT=viscii10
+FONT=viscii10-8x16
 ```
 
 
