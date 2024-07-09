@@ -241,11 +241,3 @@ sudo vim /etc/vconsole.conf
 
 FONT=viscii10-8x16
 ```
-
-
-FONT=
-
-#### Link xterm to foot - for rofi running terminal apps
-```
-ln -s /bin/foot /bin/xterm
-```
