@@ -3,3 +3,4 @@ upd72929x-fw
 wd719x-firmware
 linux-firmware-qlogic
 ast-fw
+xhci_pci
