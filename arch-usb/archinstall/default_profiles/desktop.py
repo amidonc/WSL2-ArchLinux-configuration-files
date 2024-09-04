@@ -23,10 +23,8 @@ class DesktopProfile(Profile):
 	@property
 	def packages(self) -> List[str]:
 		return [
-			'nano',
 			'vim',
 			'openssh',
-			'btop',
 			'wget',
 			'iwd',
 			'wireless_tools',
@@ -40,6 +38,7 @@ class DesktopProfile(Profile):
 			'grml-zsh-config',
 			'zsh-autosuggestions',
 			'zsh-syntax-highlighting',
+			'plymouth',
 			'tree',
 			'cifs-utils',
 			'curl',
