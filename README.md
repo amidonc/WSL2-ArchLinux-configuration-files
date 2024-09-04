@@ -106,6 +106,17 @@ add plymouth to the HOOKS array in mkinitcpio.conf.
 if you are using the systemd hook, it must be before plymouth. <br/>
 make sure you place plymouth before the crypt hook if your system is encrypted with dm-crypt <br/>
 
+update bootloader and entries
+```
+vim /boot/loader/loader.conf
+timeout 0
+```
+and quiet splash at end of options
+```
+vim /boot/loader/entries/linux.conf
+options ..... quiet splash
+```
+
 update mkinitcpio
 ```
 mkinitcpio -p linux
