@@ -1,22 +1,26 @@
-packages added
-  man-db
-  man-pages
-  base-devel
-  zsh
-  grml-zsh-config
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  vim
-  tree
-  cifs-utils
-  curl
-  git
-  openssh
-  ntfs-3g
-  stow
-  btop
-  snapper
-  snap-pac
-  
-  foot
-  rofi-wayland
+Packages Added:
+
+'vim',
+'openssh',
+'wget',
+'iwd',
+'wireless_tools',
+'wpa_supplicant',
+'smartmontools',
+'xdg-utils',
+'man-db',
+'man-pages',
+'base-devel',
+'zsh',
+'grml-zsh-config',
+'zsh-autosuggestions',
+'zsh-syntax-highlighting',
+'plymouth',
+'tree',
+'cifs-utils',
+'curl',
+'git',
+'ntfs-3g',
+'stow',
+'snapper',
+'snap-pac'
