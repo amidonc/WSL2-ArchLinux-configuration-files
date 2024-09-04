@@ -1,4 +1,4 @@
-8![alt text][logo]
+![alt text][logo]
 
 [logo]: https://archlinux.org/static/logos/archlinux-logo-dark-1200dpi.b42bd35d5916.png "Arch BTW"
 
