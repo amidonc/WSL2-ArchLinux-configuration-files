@@ -197,7 +197,7 @@ makepkg -si
 yay -Syu
 ```
 
-pleanup packages
+cleanup packages
 ```
 pacman -Rns $(pacman -Qdtq)
 ```
