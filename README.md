@@ -103,8 +103,20 @@ add plymouth to the HOOKS array in mkinitcpio.conf.
   /etc/mkinitcpio.conf
   HOOKS=(... plymouth ...)
 ```
-if you are using the systemd hook, it must be before plymouth.
-make sure you place plymouth before the crypt hook if your system is encrypted with dm-crypt
+if you are using the systemd hook, it must be before plymouth. <br/>
+make sure you place plymouth before the crypt hook if your system is encrypted with dm-crypt <br/>
+
+update mkinitcpio
+```
+mkinitcpio -p linux
+```
+
+change default shell to zsh
+```
+vim /etc/default/useradd
+
+SHELL=/usr/bin/zsh
+```
 
 exit chroot, reboot system
 ```
