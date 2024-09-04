@@ -97,10 +97,15 @@ vim /etc/fstab
 UUID=<uid>  /boot  vfat  FW,relatime,fsmask=0077.dmask077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro  0 2
 ```
 
-create a symbolic link to kitty from xterm
+configure Plymouth
+add plymouth to the HOOKS array in mkinitcpio.conf.
 ```
-ln -s /bin/kitty /bin/xterm
+  /etc/mkinitcpio.conf
+  HOOKS=(... plymouth ...)
 ```
+if you are using the systemd hook, it must be before plymouth.
+make sure you place plymouth before the crypt hook if your system is encrypted with dm-crypt
+
 exit chroot, reboot system
 ```
 exit
